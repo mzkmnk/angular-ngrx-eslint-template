@@ -4,9 +4,11 @@ import angular from 'angular-eslint';
 import gitignore from 'eslint-config-flat-gitignore'
 import ngrx from '@ngrx/eslint-plugin/v9/index.js';
 import stylisticJs from '@stylistic/eslint-plugin-js'
+import eslintConfigPrettier from "eslint-config-prettier";
 
 export default tsEslint.config(
   gitignore(),
+  eslintConfigPrettier,
   // eslint typescript-eslint recommended config
   {
     files           : [ '**/*.ts' ],
