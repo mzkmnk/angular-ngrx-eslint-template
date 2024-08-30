@@ -25,6 +25,7 @@ export default tsEslint.config(
 
   // eslint stylistic
   {
+    files:['**/*.ts'],
     plugins: {
       '@stylistic/js': stylisticJs,
     },
@@ -38,7 +39,7 @@ export default tsEslint.config(
         "1tbs",
         {
           "allowSingleLine": true
-        } 
+        }
       ],
       '@stylistic/js/comma-style'  : [ "error", "last" ],
       '@stylistic/js/dot-location' : [ "error", "object" ],
