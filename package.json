@@ -9,7 +9,8 @@
     "test": "ng test",
     "check:eslint": "eslint",
     "fix:eslint": "eslint --fix",
-    "fix:prettier": "npx prettier . --write"
+    "fix:prettier": "npx prettier . --write",
+    "fix": "npm run fix:prettier && npm run fix:eslint"
   },
   "private": true,
   "dependencies": {
