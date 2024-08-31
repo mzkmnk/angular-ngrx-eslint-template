@@ -32,6 +32,8 @@ export default tsEslint.config(
       '@stylistic/js': stylisticJs,
     },
     rules: {
+      '@stylistic/js/quotes': ["error", "single"],
+      '@stylistic/js/quote-props': ['error', 'consistent-as-needed', { keywords: true }],
       '@stylistic/js/array-bracket-spacing' : [ "error", "always" ],
       '@stylistic/js/arrow-spacing'         : 'error',
       '@stylistic/js/block-spacing'         : 'error',
@@ -45,7 +47,7 @@ export default tsEslint.config(
       ],
       '@stylistic/js/comma-style'  : [ "error", "last" ],
       '@stylistic/js/dot-location' : [ "error", "object" ],
-      "indent"                     : [ "error", 2 ],
+      "@stylistic/js/indent"                     : [ "error", 2 ],
       "@stylistic/js/key-spacing"  : [ "error", {
         "multiLine": {
           "beforeColon" : false,
@@ -67,8 +69,6 @@ export default tsEslint.config(
   {
     files : [ "**/*.ts" ],
     rules : {
-      quotes             : [ "error", "single" ],
-      'quote-props'      : [ 'error', 'consistent-as-needed', { 'keywords': true } ],
       'object-shorthand' : [ 'error', 'always', { 'avoidQuotes': true } ],
     }
   },
