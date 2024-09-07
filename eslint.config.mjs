@@ -154,11 +154,11 @@ export default tsEslint.config(
   {
     files: ['**/*.html'],
     extends: [
-      ...angular.configs.templateRecommended,
-      ...angular.configs.templateAccessibility
+      ...angular.configs.templateRecommended
     ],
     rules: {
-      '@angular-eslint/template/no-negated-async': 'off'
+      '@angular-eslint/template/no-negated-async': 'off',
+      '@angular-eslint/template/attributes-order':'error',
     }
   },
 
