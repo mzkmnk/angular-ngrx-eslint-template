@@ -4,11 +4,9 @@ import angular from 'angular-eslint';
 import gitignore from 'eslint-config-flat-gitignore';
 import ngrx from '@ngrx/eslint-plugin/v9/index.js';
 import stylistic from '@stylistic/eslint-plugin';
-import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default tsEslint.config(
   gitignore(),
-  eslintConfigPrettier,
   // eslint typescript-eslint recommended config
   {
     files: ['**/*.ts'],
@@ -69,7 +67,7 @@ export default tsEslint.config(
           }
         }
       ],
-      '@stylistic/max-len': ['error', { code: 80, ignoreComments: true }],
+      '@stylistic/max-len': ['error', { code: 150, ignoreComments: true }],
       '@stylistic/multiline-ternary': ['error', 'always']
     }
   },
